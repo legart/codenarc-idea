@@ -214,8 +214,8 @@ public abstract class CodeNarcInspectionTool extends LocalInspectionTool {
                                                 ProblemDescriptor descriptor = manager.createProblemDescriptor(
                                                         element,
                                                         message == null ? description == null ? rule.getName() : description : message,
+                                                        false,
                                                         ProblemHighlightType.GENERIC_ERROR_OR_WARNING,
-                                                        null,
                                                         isOnTheFly);
                                                 descriptors.add(descriptor);
                                             }
